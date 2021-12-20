@@ -1,0 +1,61 @@
+$color--black: #000;
+$color--white: #fff;
+$color--iden: #0d6efd;
+
+input[type=text].on {
+  background: $color--iden;
+  color: $color--white;
+}
+  
+input[type=password].on {
+  background: $color--iden;
+  color: $color--white;
+}
+
+input[type=email].on {
+  background: $color--iden;
+  color: $color--white;
+}
+
+.comment{
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+  background: $color--black;
+  color: $color--white;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;                
+}
+.comment.on{            
+  opacity: 0.8;            
+}
+
+
+.addBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 30px;
+  padding: 10px;
+  color: $color--iden;
+}
+
+i {
+  cursor: pointer;
+}
+
+.listTitle {
+  margin-bottom: 10px;
+  background-color: $color--iden;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.listInner {
+  margin-bottom: 10px;
+  background-color: $color--white;
+  padding: 5px 0;
+}
